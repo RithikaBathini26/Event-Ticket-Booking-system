@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Page Styles */
+.profile-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.booking-table th,
+.booking-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.booking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.booking-table tr:hover {
+    background-color: #f1f1f1;
+}
+/* Profile details */
+.profile-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-details p:last-child {
+    border-bottom: none;
+}
+
+/* Bookings Table */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-table thead {
+    background-color: #f4f4f4;
+}
+
+.booking-table th, .booking-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.booking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.booking-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.booking-table td {
+    word-break: break-word;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}

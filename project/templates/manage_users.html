@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Bookings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/manage_user.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Booking List</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Details</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking.username }}</td>
+                    <td>{{ booking.details }}</td>
+                    <td>{{ booking.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

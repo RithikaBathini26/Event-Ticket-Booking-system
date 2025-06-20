@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Payment</h1>
+<button onclick="window.location.href='/profile'">details</button>
+<p>Your QR code for booking confirmation will be generated after booking.</p>
+<a href="{{ url_for('profile') }}" class="button">view details</a>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/event_details.css') }}">
+    <title>Events Ticket Card</title>
+</head>
+<body>
+<div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="{{ url_for('static', filename=event.image) }}" class="img-fluid" alt="">  
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">{{ event.name }}</p>
+                    <div class="separator"></div>
+                    <p class="info"></p>
+                    <p class="price"></p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            {{ event.location }}
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+                         <p class="info">price:{{ event.price }}</p>
+                        <p class="info description">
+                            {{event.description}}
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="{{ url_for('book', event_id=event.id) }}" class="btn btn-primary">Book Now</a></button>
+
+            </div>
+     </div>
+    
+</body>
+</html>

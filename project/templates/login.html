@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Event Ticket Booking System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form  method="POST">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+            <div class="register-link">
+                 <p>New user?<a herf="{{ url_for('signup') }}">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+ 
+</body>
+</html>

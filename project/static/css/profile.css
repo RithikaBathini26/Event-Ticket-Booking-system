@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.courses-section {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <body>
+            <h1>My Bookings</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Tickets</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>{{ booking.event.name }}</td>
+            <td>{{ booking.name }}</td>
+            <td>{{ booking.email }}</td>
+            <td>{{ booking.mobile }}</td>
+            <td>{{ booking.tickets }}</td>
+            <td>{{ booking.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+        </tr>
+       
+    </tbody>
+</table>
+</body>
+</html>
+

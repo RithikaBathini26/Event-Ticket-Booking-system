@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_dashboard.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+     <div class="logo"><a class="navbar-brand" href="{{ url_for('home') }}">Event Booking</a></div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('events_page') }}">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('media') }}">media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="admin-dashboard">
+        <h1>Welcome to the Admin Dashboard</h1>
+        
+      
+        
+        <div class="button-container">
+          <div class="flex-box">
+            <img src="static/admin.jpg" alt="Image 1">
+            <button><a href="{{ url_for('manage_users') }}" class="dashboard-button">View Users</a></button>
+          </div>
+          
+          <div class="flex-box">
+            <img src="static/contact.jpg" alt="Image 2">
+            <button><a href="{{ url_for('manage_contact') }}" class="dashboard-button">View Querries</a>
+            </button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

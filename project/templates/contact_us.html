@@ -1,0 +1,29 @@
+
+<html lang="en"></html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width-device-width,initial-scale=1.0">
+      <title>Contact Form</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/contact_us.css') }}">
+    </head>
+    <body>
+        <div class="contact-container">
+            <form action="/contact_us" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div><label for="username">Username:</label>
+
+                <input type="text" id="username" name="username" placeholder="your name" class="contact-inputs" required>
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" placeholder="your email" class="contact-inputs" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="your message" class="contact-inputs" required></textarea>
+                    <button type="submit">submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="static/hi.jpg">
+        </div>
+    </body>
+</html>

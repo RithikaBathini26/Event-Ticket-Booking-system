@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+<div class="container">
+    <h1>Profile</h1>
+    <p>Welcome, {{ username }}!</p>
+    <div class="profile-container">
+        
+
+        <h2>Your Bookings</h2>
+        <table class="booking-table">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                    {% set event = events | selectattr('id', 'equalto', booking.event_id) | first %}
+                    <tr>
+                        <td>{{ event.name }}</td>
+                        <td>{{ event.date }}</td>
+                        <td>{{ event.location }}</td>
+                        <td>{{ event.description }}</td>
+                        <td>{{ booking.details }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+    </body>
+</html>
